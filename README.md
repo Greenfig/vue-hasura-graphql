@@ -39,5 +39,8 @@ This prototype has only one model (Jobs)
 
 Hasura creates <model>_by_id query automatically once the table is created
 
+## Hasura Actions
+https://hasura.io/blog/introducing-actions/
+
 ## Web Socket (ws endpoint) Documentation
 https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
