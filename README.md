@@ -38,3 +38,6 @@ https://hasura.io/learn/graphql/vue/intro-to-graphql/2-fetching-data-queries/
 This prototype has only one model (Jobs)
 
 Hasura creates <model>_by_id query automatically once the table is created
+
+## Web Socket (ws endpoint) Documentation
+https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
