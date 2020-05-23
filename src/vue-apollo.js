@@ -11,7 +11,7 @@ const AUTH_TOKEN = 'apollo-token'
 // Http endpoint
 const httpEndpoint =
     process.env.VUE_APP_GRAPHQL_HTTP ||
-    'https://graphql-engine-demo1.herokuapp.com/v1/graphql' ||
+    'https://vue-graphql-hasura-endpoint.herokuapp.com/v1/graphql' ||
     'http://localhost:4000/graphql'
 // Files URL root
 export const filesRoot = process.env.VUE_APP_FILES_ROOT || httpEndpoint.substr(0, httpEndpoint.indexOf('/graphql'))
@@ -26,7 +26,7 @@ const defaultOptions = {
     // Use `null` to disable subscriptions
     wsEndpoint:
         process.env.VUE_APP_GRAPHQL_WS ||
-        'ws://graphql-engine-demo1.herokuapp.com/v1/graphql' ||
+        'wss://vue-graphql-hasura-endpoint.herokuapp.com/v1/graphql' ||
         'ws://localhost:4000/graphql',
     // LocalStorage token
     tokenName: AUTH_TOKEN,
