@@ -20,9 +20,9 @@
                     <div class="job-list col-md-6">
                         <div class="job-card-container" v-for="(job, index) in data.job_search" :key="index">
                             <v-card>
-                                <v-card-title class="headline">{{ job.position_name }}</v-card-title>
+                                <v-card-title class="job-card-headline">{{ job.position_name }}</v-card-title>
 
-                                <v-card-subtitle>{{ job.description }}</v-card-subtitle>
+                                <v-card-subtitle class="job-card-sub">{{ job.description }}...</v-card-subtitle>
 
                                 <v-card-actions>
                                     <v-btn click text v-on:click="viewJobInfo(job.id)">View Job</v-btn>
@@ -112,6 +112,9 @@ label {
 .job {
     &-card-container {
         margin: 10px 0;
+    }
+    &-card-sub {
+        text-align: left;
     }
     &-list {
         padding: 0 40px;
