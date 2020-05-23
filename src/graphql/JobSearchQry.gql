@@ -1,8 +1,9 @@
 query JobSearch ($search: String!) {
     # Query name corresponds to the action name on the server
-    job_search (search: $search) {
+    job_search (args: { search: $search }) {
         id,
         location,
-        positionName
+        position_name,
+        description
     }
 }

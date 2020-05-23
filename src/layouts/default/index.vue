@@ -14,8 +14,8 @@ export default {
     computed: {
         navLinks: function() {
             return routes
-        },
-    },
+        }
+    }
 }
 </script>
 

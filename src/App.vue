@@ -1,9 +1,10 @@
 <template>
-    <div id="app">
-        <router-view />
-    </div>
+    <v-app>
+        <v-content>
+            <router-view />
+        </v-content>
+    </v-app>
 </template>
-
 <style lang="scss">
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -11,5 +12,7 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+    height: 100vh;
+    overflow: hidden;
 }
 </style>

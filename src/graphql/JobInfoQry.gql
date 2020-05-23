@@ -1,7 +1,7 @@
 query GetJobById ($id: String!) {
     # Query name corresponds to the action name on the server
     jobs_by_pk (id: $id) {
-        positionName,
+        position_name,
         url,
         location,
         description
